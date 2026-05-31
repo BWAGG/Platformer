@@ -1,0 +1,70 @@
+function SnakeState_Pursue(){
+	vsp = vsp + grv;
+	attackdelay--;
+	
+	//Look for player
+	if (distance_to_object(o_player) > 500){
+		state = SnakeSTATE.FREE; 
+	}
+	if (distance_to_object(o_player) < 30 and attackdelay < 0){
+		image_index = 0;
+		image_speed = 1;
+		hsp=0;
+		ds_list_clear(hitByAttack);
+		state = SnakeSTATE.ATTACK;
+	}
+	//pathfinding to player
+	hsp = walksp*sign(o_player.x - x);
+	//Horizontal Collision
+	if (place_meeting(x+hsp, y, o_wall) ){
+		hsp = 0;
+		if (place_meeting(x, y+1, o_wall)){
+			vsp = -6;
+		}
+	}
+	x=x+hsp;
+	//Vertical Collision
+	if (place_meeting(x, y+vsp, o_wall)){
+		while (!place_meeting(x, y+sign(vsp), o_wall)){
+			y=y+sign(vsp);
+		}
+		vsp = 0;
+	}
+
+	y=y+vsp;
+	//Death Plane
+
+	if (place_meeting(x+hsp, y, o_death)){
+		instance_destroy();
+	}
+	if (hp = 0){
+		instance_destroy();
+	}
+	//Animations
+	if (!place_meeting(x, y+1, o_wall)){
+		if (sign(vsp)>0){
+			sprite_index = s_snake_idle;
+		}
+	}
+	else{
+		image_speed = 1;
+		if (hsp == 0){
+			sprite_index = s_snake_idle;
+			stopped = true;
+		}
+		else {
+			if (stopped){
+				image_index = 0;
+				image_speed = 1;
+				sprite_index = s_snake_start_move;
+				stopped = false;
+			}
+			else if (animation_end()){
+				image_index = 0;
+				image_speed = 1;
+				sprite_index = s_snake_move;
+			}
+		}
+	}
+	if (hsp != 0) image_xscale = sign(hsp)*-1;
+}

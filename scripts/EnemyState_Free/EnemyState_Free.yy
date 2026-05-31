@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EnemyState_Free",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EnemyState_Free",
+  "parent":{
+    "name":"StoatEffects",
+    "path":"folders/StoatEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

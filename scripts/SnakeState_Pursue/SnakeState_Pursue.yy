@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SnakeState_Pursue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SnakeState_Pursue",
+  "parent":{
+    "name":"SnakeEffects",
+    "path":"folders/SnakeEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

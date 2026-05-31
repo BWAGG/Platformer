@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Transition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Transition",
+  "parent":{
+    "name":"Platformer",
+    "path":"Platformer.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

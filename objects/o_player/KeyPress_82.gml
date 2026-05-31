@@ -1,0 +1,1 @@
+scr_Transition(TRANS_MODE.RESTART);
