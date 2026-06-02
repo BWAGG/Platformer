@@ -9,4 +9,5 @@ switch (state)
 	case PLAYERSTATE.FREE: PlayerState_Free(); break;
 	case PLAYERSTATE.ATTACK_JAB: PlayerState_Poke(); break;
 	case PLAYERSTATE.ATTACK_PECK: PlayerState_Peck(); break;
+	case PLAYERSTATE.DEAD: break;
 }

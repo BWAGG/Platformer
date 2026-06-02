@@ -8,10 +8,11 @@ enum TRANS_MODE
 	NEXT,
 	GOTO,
 	RESTART,
+	DIE,
 	RESPAWN,
 	INTRO
 }
 
-trans_mode = TRANS_MODE.INTRO;
+trans_mode = TRANS_MODE.OFF;
 trans_perc_comp = 1;
 target_level = Level1;

@@ -29,11 +29,19 @@ if (trans_mode != TRANS_MODE.OFF){
 				game_restart();
 				break;
 			}
+			case TRANS_MODE.DIE:{
+				trans_mode = TRANS_MODE.INTRO
+				instance_create_layer(o_player.x,o_player.y,"Screens",o_DeathScreen);
+				break;
+			}
 			case TRANS_MODE.RESPAWN:{
 				trans_mode = TRANS_MODE.INTRO;
 				o_player.hp = o_player.max_hp;
 				o_player.x = o_respawn_point.x;
 				o_player.y = o_respawn_point.y;
+				o_player.state = PLAYERSTATE.FREE;
+				layer_destroy_instances("Screens");
+				break;
 			}
 			case TRANS_MODE.OFF:{break;}
 		}

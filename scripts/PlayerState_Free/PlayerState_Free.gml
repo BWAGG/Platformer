@@ -45,11 +45,13 @@ if (place_meeting(x, y+vsp, o_wall)){
 y=y+vsp;
 //Death Plane
 if (place_meeting(x+hsp, y, o_death)){
-	scr_Transition(TRANS_MODE.RESPAWN);
+	state = PLAYERSTATE.DEAD;
+	scr_Transition(TRANS_MODE.DIE);
 	o_flag.Touched = false;
 }
 if (hp <= 0){
-	scr_Transition(TRANS_MODE.RESPAWN);
+	state = PLAYERSTATE.DEAD;
+	scr_Transition(TRANS_MODE.DIE);
 	o_flag.Touched = false;
 }
 //Animations
