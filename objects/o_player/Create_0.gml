@@ -7,6 +7,7 @@ attackdelay = 0;
 max_hp = 10;
 hp = 10;
 flash = 0;
+invuln = false;
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
@@ -16,5 +17,6 @@ enum PLAYERSTATE
 	FREE,
 	ATTACK_PECK,
 	ATTACK_JAB,
+	ROLL,
 	DEAD
 }

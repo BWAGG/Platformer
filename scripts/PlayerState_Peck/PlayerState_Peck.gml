@@ -19,9 +19,8 @@ function PlayerState_Peck(){
 		}
 	}
 	//Movement
-	var move = key_right - key_left;
 	mask_index = S_Kevin_Stand;
-	hac = move*walksp;
+	hac = image_xscale*walksp;
 	hsp += hac;
 
 	//Horizontal Collision

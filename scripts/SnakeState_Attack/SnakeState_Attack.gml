@@ -10,13 +10,13 @@ function SnakeState_Attack(){
 	if (hits > 0){
 		for (var i = 0; i < hits; i++){
 			var hitID = hitByAttackNow[| i];
-			if (ds_list_find_index(hitByAttack, hitID) == -1){
+			if (ds_list_find_index(hitByAttack, hitID) == -1 and hitID.invuln == false){
 				ds_list_add(hitByAttack, hitID);
 				var dir = sign(hitID.x - x);
 				with (hitID)
 				{
 					hp -= 2;
-					flash = 8;
+					flash = 20;
 					hsp = dir * 10;
 					vsp = -1;
 				}
