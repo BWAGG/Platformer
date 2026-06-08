@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"o_roll",
+  "%Name":"o_Interactable",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_roll",
+  "name":"o_Interactable",
   "overriddenProperties":[],
   "parent":{
     "name":"Platformer",
     "path":"Platformer.yyp",
   },
-  "parentObjectId":{
-    "name":"o_Interactable",
-    "path":"objects/o_Interactable/o_Interactable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_roll_pickup",
-    "path":"sprites/s_roll_pickup/s_roll_pickup.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

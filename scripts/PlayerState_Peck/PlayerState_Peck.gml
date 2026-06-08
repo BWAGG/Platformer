@@ -20,7 +20,10 @@ function PlayerState_Peck(){
 	}
 	//Movement
 	mask_index = S_Kevin_Stand;
-	hac = image_xscale*walksp;
+	hac = image_xscale*0.2;
+	if (image_index == 1){
+		hsp += image_xscale*4;
+	}
 	hsp += hac;
 
 	//Horizontal Collision

@@ -12,7 +12,10 @@
     "name":"Platformer",
     "path":"Platformer.yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_Interactable",
+    "path":"objects/o_Interactable/o_Interactable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

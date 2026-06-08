@@ -29,6 +29,7 @@
   "name":"Platformer",
   "resources":[
     {"id":{"name":"Death_Font","path":"fonts/Death_Font/Death_Font.yy",},},
+    {"id":{"name":"Pickup_Font","path":"fonts/Pickup_Font/Pickup_Font.yy",},},
     {"id":{"name":"o_ability_manager","path":"objects/o_ability_manager/o_ability_manager.yy",},},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},},
     {"id":{"name":"o_death","path":"objects/o_death/o_death.yy",},},
@@ -36,6 +37,7 @@
     {"id":{"name":"o_Enemy","path":"objects/o_Enemy/o_Enemy.yy",},},
     {"id":{"name":"o_flag","path":"objects/o_flag/o_flag.yy",},},
     {"id":{"name":"o_healthBar","path":"objects/o_healthBar/o_healthBar.yy",},},
+    {"id":{"name":"o_Interactable","path":"objects/o_Interactable/o_Interactable.yy",},},
     {"id":{"name":"o_Main_Menu","path":"objects/o_Main_Menu/o_Main_Menu.yy",},},
     {"id":{"name":"o_Peck","path":"objects/o_Peck/o_Peck.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},

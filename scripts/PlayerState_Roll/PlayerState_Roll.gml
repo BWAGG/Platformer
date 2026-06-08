@@ -1,18 +1,15 @@
 function PlayerState_Roll(){
 	sprite_index = s_Kevin_Roll;
-	
+	var move = key_right - key_left;
 	//Movement
-
-	hsp = image_xscale*9;
 	invuln = true;
 	//Horizontal Collision
 	if (place_meeting(x+hsp, y, o_wall)){
-		while (!place_meeting(x+sign(hsp), y, o_wall)){
-			x=x+sign(hsp);
-		}
 		hsp = 0;
 	}
-
+	else if (!place_meeting(x+init_speed, y, o_wall)){
+		hsp = init_speed;
+	}
 	x=x+hsp;
 	
 	if (vsp < 0){

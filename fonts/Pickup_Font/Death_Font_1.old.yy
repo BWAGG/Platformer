@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"Death_Font",
+  "%Name":"Font1",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":44,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":56,
   "maintainGms1Font":false,
-  "name":"Death_Font",
+  "name":"Font1",
   "parent":{
     "name":"DeathMenu",
     "path":"folders/DeathMenu.yy",

@@ -1,1 +1,3 @@
-cooldown = 25;
+event_inherited();
+
+cooldown = 60;

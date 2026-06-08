@@ -8,6 +8,7 @@ max_hp = 10;
 hp = 10;
 flash = 0;
 invuln = false;
+init_speed = 0;
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();

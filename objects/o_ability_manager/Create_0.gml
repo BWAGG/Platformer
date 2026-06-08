@@ -8,7 +8,6 @@ function ability(_ability_obj, _state_Name, _cooldown) constructor {
 ability_list = array_create(4,0);
 
 
-
 decrement_cooldowns = function(){
 	for (i = 0; i < array_length(ability_list); i++){
 		if (ability_list[i] != 0){
