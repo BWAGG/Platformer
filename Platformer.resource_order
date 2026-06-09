@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"DeathMenu","order":26,"path":"folders/DeathMenu.yy",},
+    {"name":"AbilityMenu_Display","order":35,"path":"folders/AbilityMenu_Display.yy",},
     {"name":"PersistentEffects","order":28,"path":"folders/PersistentEffects.yy",},
     {"name":"PlayerEffects","order":13,"path":"folders/PlayerEffects.yy",},
     {"name":"SnakeEffects","order":20,"path":"folders/SnakeEffects.yy",},
@@ -10,7 +11,6 @@
   "ResourceOrderSettings":[
     {"name":"Death_Font","order":1,"path":"fonts/Death_Font/Death_Font.yy",},
     {"name":"Pickup_Font","order":34,"path":"fonts/Pickup_Font/Pickup_Font.yy",},
-    {"name":"o_ability_manager","order":2,"path":"objects/o_ability_manager/o_ability_manager.yy",},
     {"name":"o_camera","order":16,"path":"objects/o_camera/o_camera.yy",},
     {"name":"o_death","order":6,"path":"objects/o_death/o_death.yy",},
     {"name":"o_Enemy","order":21,"path":"objects/o_Enemy/o_Enemy.yy",},

@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"DeathMenu","folderPath":"folders/DeathMenu.yy","name":"DeathMenu","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"AbilityMenu_Display","folderPath":"folders/AbilityMenu_Display.yy","name":"AbilityMenu_Display","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PersistentEffects","folderPath":"folders/PersistentEffects.yy","name":"PersistentEffects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PlayerEffects","folderPath":"folders/PlayerEffects.yy","name":"PlayerEffects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"SnakeEffects","folderPath":"folders/SnakeEffects.yy","name":"SnakeEffects","resourceType":"GMFolder","resourceVersion":"2.0",},
