@@ -1,0 +1,7 @@
+gameState = GAMESTATE.FREE;
+
+enum GAMESTATE
+{
+	FREE,
+	PAUSED
+}

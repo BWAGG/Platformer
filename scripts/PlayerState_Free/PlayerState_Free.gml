@@ -1,4 +1,5 @@
 function PlayerState_Free(){
+o_ability_manager.decrement_cooldowns();
 //Calculate Movement
 var move = key_right - key_left;
 

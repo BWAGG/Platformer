@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GameState_Paused",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GameState_Paused",
+  "parent":{
+    "name":"GameManager",
+    "path":"folders/GameManager.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

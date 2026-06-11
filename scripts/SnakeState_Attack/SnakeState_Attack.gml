@@ -16,7 +16,7 @@ function SnakeState_Attack(){
 				with (hitID)
 				{
 					hp -= 2;
-					flash = 20;
+					flash = 10;
 					hsp = dir * 10;
 					vsp = -1;
 				}

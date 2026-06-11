@@ -1,7 +1,8 @@
 {
   "FolderOrderSettings":[
-    {"name":"DeathMenu","order":26,"path":"folders/DeathMenu.yy",},
     {"name":"AbilityMenu_Display","order":35,"path":"folders/AbilityMenu_Display.yy",},
+    {"name":"DeathMenu","order":26,"path":"folders/DeathMenu.yy",},
+    {"name":"GameManager","order":36,"path":"folders/GameManager.yy",},
     {"name":"PersistentEffects","order":28,"path":"folders/PersistentEffects.yy",},
     {"name":"PlayerEffects","order":13,"path":"folders/PlayerEffects.yy",},
     {"name":"SnakeEffects","order":20,"path":"folders/SnakeEffects.yy",},
@@ -26,6 +27,7 @@
     {"name":"Main_Menu","order":29,"path":"rooms/Main_Menu/Main_Menu.yy",},
     {"name":"animation_end","order":12,"path":"scripts/animation_end/animation_end.yy",},
     {"name":"EnemyState_Free","order":1,"path":"scripts/EnemyState_Free/EnemyState_Free.yy",},
+    {"name":"GameState_Paused","order":1,"path":"scripts/GameState_Paused/GameState_Paused.yy",},
     {"name":"PlayerState_Free","order":1,"path":"scripts/PlayerState_Free/PlayerState_Free.yy",},
     {"name":"PlayerState_Peck","order":2,"path":"scripts/PlayerState_Peck/PlayerState_Peck.yy",},
     {"name":"PlayerState_Poke","order":3,"path":"scripts/PlayerState_Poke/PlayerState_Poke.yy",},
