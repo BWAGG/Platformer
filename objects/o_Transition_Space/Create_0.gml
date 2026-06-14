@@ -15,4 +15,4 @@ enum TRANS_MODE
 
 trans_mode = TRANS_MODE.OFF;
 trans_perc_comp = 1;
-target_level = Level1;
+target_level = Main_Menu;

@@ -1,4 +1,7 @@
 function PlayerState_Free(){
+if (keyboard_check_pressed(vk_escape)){
+	o_gameManager.gameState = GAMESTATE.PAUSED;
+}
 o_ability_manager.decrement_cooldowns();
 //Calculate Movement
 var move = key_right - key_left;
@@ -37,7 +40,7 @@ if (place_meeting(x+hsp, y, o_wall)){
 
 x=x+hsp;
 //Jump Check
-
+hsp = clamp(hsp, -20, 20);
 if (key_up and (place_meeting(x, y+2*vsp+1, o_wall) or double_jump)){
 	if (!(place_meeting(x, y+2*vsp+1, o_wall))){
 		double_jump = false;
@@ -60,6 +63,7 @@ if (place_meeting(x, y+vsp, o_wall)){
 	}
 	vsp = 0;
 }
+vsp = clamp(vsp, -10, 10);
 
 y=y+vsp;
 //Death Plane

@@ -1,8 +1,11 @@
 function GameState_Paused(){
-	instance_deactivate_layer("Instances");
-	instance_deactivate_layer("UI");
+	if (ObjectsPaused == false){
+		pause_tag("pausable");
+		ObjectsPaused = true;
+	}
 	if (keyboard_check_pressed(vk_escape)){
-		instance_activate_all();
+		unpause_tag("pausable");
 		gameState = GAMESTATE.FREE;
+		ObjectsPaused = false;
 	}
 }

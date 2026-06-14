@@ -1,4 +1,7 @@
 function PlayerState_Peck(){
+	if (keyboard_check_pressed(vk_escape)){
+		o_gameManager.gameState = GAMESTATE.PAUSED;
+	}
 	sprite_index = s_Kevin_Peck_2;
 	
 	//Switch to attack and check for hits

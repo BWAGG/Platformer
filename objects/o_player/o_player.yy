@@ -41,5 +41,8 @@
     "name":"S_Kevin_Stand",
     "path":"sprites/S_Kevin_Stand/S_Kevin_Stand.yy",
   },
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

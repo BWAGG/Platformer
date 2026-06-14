@@ -1,6 +1,6 @@
 var key_up = keyboard_check_pressed(ord("W"));
 var key_down = keyboard_check_pressed(ord("S"));
-var key_select = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);
+var key_select = keyboard_check_pressed(vk_space);
 
 if (menu_control == true){
 	if (key_up){

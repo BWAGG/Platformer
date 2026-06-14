@@ -1,4 +1,7 @@
 function PlayerState_Roll(){
+	if (keyboard_check_pressed(vk_escape)){
+		o_gameManager.gameState = GAMESTATE.PAUSED;
+	}
 	sprite_index = s_Kevin_Roll;
 	var move = key_right - key_left;
 	//Movement

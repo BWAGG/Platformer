@@ -51,7 +51,9 @@ function SnakeState_Patrol(){
 	}
 	if (hsp != 0) image_xscale = sign(hsp)*-1;
 	//and collision_line(x, y, o_player.x, o_player.y, o_wall, false, true) == noone
-	if (distance_to_object(o_player) < 300){
-		state = SnakeSTATE.PURSUE; 
+	if instance_exists(o_player){
+		if (distance_to_object(o_player) < 300){
+			state = SnakeSTATE.PURSUE; 
+		}
 	}
 }

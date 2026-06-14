@@ -2,14 +2,14 @@
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_up = keyboard_check_pressed(ord("W"));
-key_interact = keyboard_check_pressed(ord("E"));
+key_interact = keyboard_check_pressed(ord("E"));s
 key_ability0 = keyboard_check_pressed(vk_space);
 key_ability1 = keyboard_check_pressed(vk_shift);
 
 switch (state)
 {
 	case PLAYERSTATE.FREE: PlayerState_Free(); break;
-	case PLAYERSTATE.ATTACK_JAB: PlayerState_Poke(); break;
+	case PLAYERSTATE.ATTACK_SPIT: PlayerState_Spit(); break;
 	case PLAYERSTATE.ATTACK_PECK: PlayerState_Peck(); break;
 	case PLAYERSTATE.ROLL: PlayerState_Roll(); break;
 	case PLAYERSTATE.DEAD: break;

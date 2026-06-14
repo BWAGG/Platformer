@@ -39,6 +39,8 @@ if (trans_mode != TRANS_MODE.OFF){
 				o_player.hp = o_player.max_hp;
 				o_player.x = o_respawn_point.x;
 				o_player.y = o_respawn_point.y;
+				o_camera.x = o_respawn_point.x;
+				o_camera.y = o_respawn_point.y;
 				o_player.state = PLAYERSTATE.FREE;
 				layer_destroy_instances("Screens");
 				break;

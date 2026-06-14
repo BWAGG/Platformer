@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"PlayerState_Poke",
+  "%Name":"PlayerState_Spit",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"PlayerState_Poke",
+  "name":"PlayerState_Spit",
   "parent":{
     "name":"PlayerEffects",
     "path":"folders/PlayerEffects.yy",

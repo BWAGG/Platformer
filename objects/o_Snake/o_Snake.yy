@@ -42,5 +42,8 @@
     "name":"s_snake_idle",
     "path":"sprites/s_snake_idle/s_snake_idle.yy",
   },
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

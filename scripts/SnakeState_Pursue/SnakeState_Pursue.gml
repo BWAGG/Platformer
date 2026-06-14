@@ -1,21 +1,22 @@
 function SnakeState_Pursue(){
 	vsp = vsp + grv;
 	attackdelay--;
-	
-	//Look for player
-	if (distance_to_object(o_player) > 500){
-		state = SnakeSTATE.FREE; 
+	if (instance_exists(o_player)){
+		//Look for player
+		if (distance_to_object(o_player) > 500){
+			state = SnakeSTATE.FREE; 
+		}
+		if (distance_to_object(o_player) < 30 and attackdelay < 0){
+			image_index = 0;
+			image_speed = 1;
+			hsp=0;
+			ds_list_clear(hitByAttack);
+			state = SnakeSTATE.ATTACK;
+		}
+		//pathfinding to player
+		hsp = walksp*sign(o_player.x - x);
+		//Horizontal Collision
 	}
-	if (distance_to_object(o_player) < 30 and attackdelay < 0){
-		image_index = 0;
-		image_speed = 1;
-		hsp=0;
-		ds_list_clear(hitByAttack);
-		state = SnakeSTATE.ATTACK;
-	}
-	//pathfinding to player
-	hsp = walksp*sign(o_player.x - x);
-	//Horizontal Collision
 	if (place_meeting(x+hsp, y, o_wall) ){
 		hsp = 0;
 		if (place_meeting(x, y+1, o_wall)){

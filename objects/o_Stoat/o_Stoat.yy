@@ -42,5 +42,8 @@
     "name":"s_stoat_idle",
     "path":"sprites/s_stoat_idle/s_stoat_idle.yy",
   },
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }
