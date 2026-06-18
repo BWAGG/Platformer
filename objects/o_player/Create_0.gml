@@ -9,6 +9,7 @@ hp = 10;
 flash = 0;
 invuln = false;
 init_speed = 0;
+ability_charge = 0;
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();

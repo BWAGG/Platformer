@@ -123,4 +123,9 @@ if (key_ability1 && o_ability_manager.ability_list[1] != 0 && o_ability_manager.
 	o_ability_manager.ability_list[1].current_cooldown = o_ability_manager.ability_list[1].cooldown;
 	state = o_ability_manager.ability_list[1].state_name; 
 }
+if (key_ability2 && o_ability_manager.ability_list[2] != 0 && o_ability_manager.ability_list[2].current_cooldown == 0){
+	key_held = true;
+	o_ability_manager.ability_list[2].current_cooldown = o_ability_manager.ability_list[2].cooldown;
+	state = o_ability_manager.ability_list[2].state_name;
+}
 }

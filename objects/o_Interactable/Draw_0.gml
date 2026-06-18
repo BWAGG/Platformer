@@ -6,5 +6,5 @@ if (place_meeting(x,y,o_player)){
 	draw_set_font(Pickup_Font);
 	draw_set_color(c_yellow);
 	var offset_y = 5;
-	draw_text(x, bbox_top - offset_y, "Press E to Interact");
+	draw_text(x, bbox_top - offset_y, "Press I to Interact");
 }

@@ -60,15 +60,14 @@ function PlayerState_Peck(){
 	//Death Plane
 
 if (place_meeting(x+hsp, y, o_death)){
-	scr_Transition(TRANS_MODE.RESPAWN);
+	state = PLAYERSTATE.DEAD;
+	scr_Transition(TRANS_MODE.DIE);
 	o_flag.Touched = false;
 }
 if (hp <= 0){
-	scr_Transition(TRANS_MODE.RESPAWN);
-	hp = max_hp;
+	state = PLAYERSTATE.DEAD;
+	scr_Transition(TRANS_MODE.DIE);
 	o_flag.Touched = false;
-	
-	
 }
 	
 	if (animation_end()){
