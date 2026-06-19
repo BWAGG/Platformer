@@ -1,0 +1,1 @@
+apply_buffs(active_debuffs);

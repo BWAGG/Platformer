@@ -1,4 +1,6 @@
-hsp = 2;
+event_inherited();
+
+hsp = base_speed;
 vsp = 0;
 grv = 0.15;
 

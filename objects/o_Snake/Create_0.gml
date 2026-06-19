@@ -1,7 +1,10 @@
+event_inherited();
+
 vsp = 0;
 grv = 0.15;
-walksp = 2;
-hsp = walksp;
+base_speed = 2;
+curr_speed = base_speed;
+hsp = curr_speed;
 attackdelay = 0;
 
 

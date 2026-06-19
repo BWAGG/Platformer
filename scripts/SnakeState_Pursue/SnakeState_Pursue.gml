@@ -14,7 +14,7 @@ function SnakeState_Pursue(){
 			state = SnakeSTATE.ATTACK;
 		}
 		//pathfinding to player
-		hsp = walksp*sign(o_player.x - x);
+		hsp = curr_speed*sign(o_player.x - x);
 		//Horizontal Collision
 	}
 	if (place_meeting(x+hsp, y, o_wall) ){
@@ -38,7 +38,7 @@ function SnakeState_Pursue(){
 	if (place_meeting(x+hsp, y, o_death)){
 		instance_destroy();
 	}
-	if (hp = 0){
+	if (hp <= 0){
 		instance_destroy();
 	}
 	//Animations

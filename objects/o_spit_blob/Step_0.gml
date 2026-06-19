@@ -3,7 +3,7 @@ lifespan--;
 if(place_meeting(x,y,o_player)){
 	var y_dif = o_player.y - y; //positive means player is below
 	var x_dif = o_player.x - x; //positive means player to right
-	o_player.vsp = 8*sign(y_dif);
+	o_player.vsp = 6*sign(y_dif);
 	o_player.hsp = 4*sign(x_dif); //negative hsp means approaching from the right
 	while(place_meeting(x,y,o_player)){
 		with(o_player){

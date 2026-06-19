@@ -82,9 +82,11 @@ function PlayerState_Spit(){
 	if (keyboard_check_released(ord("J")) || ability_charge >= 90){
 		key_held = false;
 		var speed_mag = clamp(ability_charge*0.2, 4, 12);
+		var dmg_charge = clamp(floor(ability_charge/40), 1,2);
 		with(instance_create_layer(x,y,"Instances",o_spit_projectile)){
 			hsp = other.hsp + speed_mag*other.image_xscale;
 			vsp = other.vsp - 3;
+			dmg = dmg_charge;
 		}
 		ability_charge=0;
 		state = PLAYERSTATE.FREE;

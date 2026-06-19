@@ -13,6 +13,7 @@
     {"name":"Death_Font","order":1,"path":"fonts/Death_Font/Death_Font.yy",},
     {"name":"Pickup_Font","order":34,"path":"fonts/Pickup_Font/Pickup_Font.yy",},
     {"name":"o_Ability_Select","order":39,"path":"objects/o_Ability_Select/o_Ability_Select.yy",},
+    {"name":"o_buff_manager","order":2,"path":"objects/o_buff_manager/o_buff_manager.yy",},
     {"name":"o_camera","order":16,"path":"objects/o_camera/o_camera.yy",},
     {"name":"o_death","order":6,"path":"objects/o_death/o_death.yy",},
     {"name":"o_Enemy","order":21,"path":"objects/o_Enemy/o_Enemy.yy",},
