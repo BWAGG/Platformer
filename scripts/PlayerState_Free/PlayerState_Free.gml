@@ -124,8 +124,26 @@ if (key_ability1 && o_ability_manager.ability_list[1] != 0 && o_ability_manager.
 	state = o_ability_manager.ability_list[1].state_name; 
 }
 if (key_ability2 && o_ability_manager.ability_list[2] != 0 && o_ability_manager.ability_list[2].current_cooldown == 0){
-	key_held = true;
 	o_ability_manager.ability_list[2].current_cooldown = o_ability_manager.ability_list[2].cooldown;
+	current = key_a2_chg;
 	state = o_ability_manager.ability_list[2].state_name;
+}
+if (key_ability3 && o_ability_manager.ability_list[3] != 0 && o_ability_manager.ability_list[3].current_cooldown == 0){
+	key_held = true;
+	o_ability_manager.ability_list[3].current_cooldown = o_ability_manager.ability_list[3].cooldown;
+	current = key_a3_chg;
+	state = o_ability_manager.ability_list[3].state_name;
+}
+if (key_ability4 && o_ability_manager.ability_list[4] != 0 && o_ability_manager.ability_list[4].current_cooldown == 0){
+	key_held = true;
+	o_ability_manager.ability_list[4].current_cooldown = o_ability_manager.ability_list[4].cooldown;
+	current = key_a4_chg;
+	state = o_ability_manager.ability_list[4].state_name;
+}
+if (key_ability5 && o_ability_manager.ability_list[5] != 0 && o_ability_manager.ability_list[5].current_cooldown == 0){
+	key_held = true;
+	o_ability_manager.ability_list[5].current_cooldown = o_ability_manager.ability_list[5].cooldown;
+	current = key_a5_chg;
+	state = o_ability_manager.ability_list[5].state_name;
 }
 }

@@ -5,7 +5,7 @@ function buff(_name, _duration, _effect, _value) constructor{
 	value = _value;
 }
 
-function apply_buffs(_array_buffs){
+apply_buffs = function(_array_buffs){
 	for( var i = 0; i < array_length(_array_buffs) -1; i++){
 		_array_buffs[i].duration--;
 		if(_array_buffs[i].effect == "movespeed"){

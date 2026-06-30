@@ -1,8 +1,10 @@
 event_inherited();
 
 if (place_meeting(x,y,o_player) and o_player.key_interact){
-	roll = new o_ability_manager.ability(self, PLAYERSTATE.ATTACK_SPIT, cooldown)
-	array_set(o_ability_manager.ability_list,2,roll);
-	o_gameManager.gameState = GAMESTATE.PAUSED;
+	var spit = new o_ability_manager.ability(self.object_index, self.sprite_index, PLAYERSTATE.ATTACK_SPIT, cooldown)
+	o_gameManager.pause_tag("pausable");
+	o_Ability_Select.new_ability = spit;
+	o_Ability_Select.menu_open = true;
+	o_player.key_interact = false;
 	instance_destroy();
 }

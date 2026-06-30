@@ -34,9 +34,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Frog",
-    "path":"sprites/s_Frog/s_Frog.yy",
+    "name":"s_Frog_Menu",
+    "path":"sprites/s_Frog_Menu/s_Frog_Menu.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

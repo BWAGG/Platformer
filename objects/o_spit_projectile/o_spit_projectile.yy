@@ -37,5 +37,8 @@
     "path":"sprites/s_spit_Ball/s_spit_Ball.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

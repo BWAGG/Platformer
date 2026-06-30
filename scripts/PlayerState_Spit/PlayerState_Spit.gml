@@ -5,7 +5,7 @@ function PlayerState_Spit(){
 	o_ability_manager.decrement_cooldowns();
 	//Calculate Movement
 	var move = key_right - key_left;
-
+	ability_sprite = s_equipped_frog;
 	hac = move*walksp;
 	hsp += hac;
 	if ((hsp) > 4 and place_meeting(x, y+2*vsp+1, o_wall)){
@@ -66,6 +66,26 @@ function PlayerState_Spit(){
 	vsp = clamp(vsp, -10, 10);
 
 	y=y+vsp;
+	
+	if (!place_meeting(x, y+1, o_wall)){
+		if (sign(vsp)>0){
+			sprite_index = s_Kevin_Descending;
+		}
+		else{
+			sprite_index = s_Kevin_Ascending;
+			image_speed = 1;
+		}
+	}
+
+	else{
+		image_speed = 1;
+		if (hsp == 0){
+			sprite_index = S_Kevin_Stand;
+		}
+		else {
+			sprite_index = S_Kevin_Running;
+		}
+	}
 	//Death Plane
 	if (place_meeting(x+hsp, y, o_death)){
 		state = PLAYERSTATE.DEAD;
@@ -79,8 +99,7 @@ function PlayerState_Spit(){
 	}
 	if (move != 0) image_xscale = move;
 	
-	if (keyboard_check_released(ord("J")) || ability_charge >= 90){
-		key_held = false;
+	if (current_released || ability_charge >= 90){
 		var speed_mag = clamp(ability_charge*0.2, 4, 12);
 		var dmg_charge = clamp(floor(ability_charge/40), 1,2);
 		with(instance_create_layer(x,y,"Instances",o_spit_projectile)){
@@ -89,6 +108,7 @@ function PlayerState_Spit(){
 			dmg = dmg_charge;
 		}
 		ability_charge=0;
+		ability_sprite=0;
 		state = PLAYERSTATE.FREE;
 	}
 	else{

@@ -38,5 +38,8 @@
     "path":"sprites/s_roll_pickup/s_roll_pickup.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

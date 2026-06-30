@@ -35,5 +35,8 @@
     "path":"sprites/s_spit_Blob/s_spit_Blob.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

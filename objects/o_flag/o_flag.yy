@@ -35,5 +35,8 @@
     "path":"sprites/sFlag/sFlag.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

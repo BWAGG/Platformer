@@ -3,9 +3,12 @@ if (place_meeting(x,y+vsp, o_wall)){
 	if(sign(vsp) == -1){
 		blob.image_angle = 180;
 	}
+	else{
+		blob.image_angle = 0;
+	}
 	with(blob){
-		while(!place_meeting(x,y-image_yscale, o_wall)){
-			y = y + image_yscale;
+		while(!place_meeting(x,y+sign(other.vsp), o_wall)){
+			y = y + sign(other.vsp);
 		}
 	}
 	instance_destroy();

@@ -38,5 +38,8 @@
     "path":"sprites/Beak_Pickup/Beak_Pickup.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

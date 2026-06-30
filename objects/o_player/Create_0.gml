@@ -10,15 +10,20 @@ flash = 0;
 invuln = false;
 init_speed = 0;
 ability_charge = 0;
+ability_keys = ["SPC", "SHI", "H", "J", "K", "L"];
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
+current_released = false;
+current = 0;
+ability_sprite = 0;
 
 enum PLAYERSTATE
 {
 	FREE,
 	ATTACK_PECK,
 	ATTACK_SPIT,
+	ATTACK_TERRAIN,
 	ROLL,
 	DEAD,
 	PAUSED
