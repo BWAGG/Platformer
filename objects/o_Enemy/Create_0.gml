@@ -11,6 +11,14 @@ function apply_buffs(_array_buffs){
 			curr_speed = base_speed*_array_buffs[i].value;
 			hsp = sign(hsp)*curr_speed;
 		}
+		if(_array_buffs[i].effect == "knockback"){
+			curr_speed = abs(_array_buffs[i].value);
+			hsp = _array_buffs[i].value;
+			if (_array_buffs[i].duration == 0){
+				curr_speed = 0;
+				hsp = 0;
+			}
+		}
 		if (_array_buffs[i].duration <= 0){
 			array_delete(_array_buffs, i, 1);
 		}

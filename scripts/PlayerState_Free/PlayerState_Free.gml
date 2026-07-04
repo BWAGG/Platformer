@@ -5,7 +5,6 @@ if (keyboard_check_pressed(vk_escape)){
 o_ability_manager.decrement_cooldowns();
 //Calculate Movement
 var move = key_right - key_left;
-
 hac = move*walksp;
 hsp += hac;
 if ((hsp) > 4 and place_meeting(x, y+2*vsp+1, o_wall)){
@@ -41,8 +40,8 @@ if (place_meeting(x+hsp, y, o_wall)){
 x=x+hsp;
 //Jump Check
 hsp = clamp(hsp, -20, 20);
-if (key_up and (place_meeting(x, y+2*vsp+1, o_wall) or double_jump)){
-	if (!(place_meeting(x, y+2*vsp+1, o_wall))){
+if (key_up and (place_meeting(x, y+2*vsp+1, o_wall) or double_jump or coyote>0)){
+	if (!(place_meeting(x, y+2*vsp+1, o_wall)) and coyote<=0){
 		double_jump = false;
 	}
 	vsp = -5.2;
@@ -59,6 +58,7 @@ if (place_meeting(x, y+vsp, o_wall)){
 		y=y+sign(vsp);
 	}
 	if (sign(vsp)>0){
+		coyote = coyote_dur;
 		double_jump = true;
 	}
 	vsp = 0;
@@ -124,24 +124,33 @@ if (key_ability1 && o_ability_manager.ability_list[1] != 0 && o_ability_manager.
 	state = o_ability_manager.ability_list[1].state_name; 
 }
 if (key_ability2 && o_ability_manager.ability_list[2] != 0 && o_ability_manager.ability_list[2].current_cooldown == 0){
+	image_index = 0;
+	image_speed = 1;
+	ds_list_clear(hitByAttack);
 	o_ability_manager.ability_list[2].current_cooldown = o_ability_manager.ability_list[2].cooldown;
 	current = key_a2_chg;
 	state = o_ability_manager.ability_list[2].state_name;
 }
 if (key_ability3 && o_ability_manager.ability_list[3] != 0 && o_ability_manager.ability_list[3].current_cooldown == 0){
-	key_held = true;
+	image_index = 0;
+	image_speed = 1;
+	ds_list_clear(hitByAttack);
 	o_ability_manager.ability_list[3].current_cooldown = o_ability_manager.ability_list[3].cooldown;
 	current = key_a3_chg;
 	state = o_ability_manager.ability_list[3].state_name;
 }
 if (key_ability4 && o_ability_manager.ability_list[4] != 0 && o_ability_manager.ability_list[4].current_cooldown == 0){
-	key_held = true;
+	image_index = 0;
+	image_speed = 1;
+	ds_list_clear(hitByAttack);
 	o_ability_manager.ability_list[4].current_cooldown = o_ability_manager.ability_list[4].cooldown;
 	current = key_a4_chg;
 	state = o_ability_manager.ability_list[4].state_name;
 }
 if (key_ability5 && o_ability_manager.ability_list[5] != 0 && o_ability_manager.ability_list[5].current_cooldown == 0){
-	key_held = true;
+	image_index = 0;
+	image_speed = 1;
+	ds_list_clear(hitByAttack);
 	o_ability_manager.ability_list[5].current_cooldown = o_ability_manager.ability_list[5].cooldown;
 	current = key_a5_chg;
 	state = o_ability_manager.ability_list[5].state_name;

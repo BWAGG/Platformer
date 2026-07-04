@@ -2,8 +2,10 @@ function PlayerState_Peck(){
 	if (keyboard_check_pressed(vk_escape)){
 		o_gameManager.gameState = GAMESTATE.PAUSED;
 	}
+	if (key_up and image_index > 3){
+		jump_buffer = true;
+	}
 	sprite_index = s_Kevin_Peck_2;
-	
 	//Switch to attack and check for hits
 	mask_index = s_Kevin_Peck_HB;
 	var hitByAttackNow = ds_list_create();
@@ -52,6 +54,7 @@ function PlayerState_Peck(){
 		}
 		if (sign(vsp)>0){
 			double_jump = true;
+			coyote = 20;
 		}
 		vsp = 0;
 	}
@@ -72,6 +75,13 @@ if (hp <= 0){
 	
 	if (animation_end()){
 		mask_index = S_Kevin_Stand;
+		if (jump_buffer and ((place_meeting(x, y+2*vsp+1, o_wall) or double_jump or coyote>0))){
+			if (!(place_meeting(x, y+2*vsp+1, o_wall)) and coyote<=0){
+				double_jump = false;
+			}
+			vsp = -5.2;
+			jump_buffer = false;
+		}
 		state = PLAYERSTATE.FREE;
 	}
 }

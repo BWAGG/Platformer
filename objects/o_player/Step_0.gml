@@ -14,6 +14,7 @@ key_ability3 = keyboard_check_pressed(key_a3_chg);
 key_ability4 = keyboard_check_pressed(key_a4_chg);
 key_ability5 = keyboard_check_pressed(key_a5_chg);
 current_released = keyboard_check_released(current);
+coyote--;
 
 switch (state)
 {
@@ -21,6 +22,7 @@ switch (state)
 	case PLAYERSTATE.ATTACK_SPIT: PlayerState_Spit(); break;
 	case PLAYERSTATE.ATTACK_PECK: PlayerState_Peck(); break;
 	case PLAYERSTATE.ATTACK_TERRAIN: PlayerState_Terrain(); break;
+	case PLAYERSTATE.ATTACK_KICK: PlayerState_Kick(); break;
 	case PLAYERSTATE.ROLL: PlayerState_Roll(); break;
 	case PLAYERSTATE.DEAD: break;
 }

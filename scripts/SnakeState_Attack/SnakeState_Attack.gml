@@ -2,7 +2,6 @@ function SnakeState_Attack(){
 	sprite_index = s_snake_bite;
 	stopped = true;
 	attackdelay = 20;
-	hsp = 0;
 	//Switch to attack and check for hits
 	mask_index = s_snake_bite_HB;
 	var hitByAttackNow = ds_list_create();

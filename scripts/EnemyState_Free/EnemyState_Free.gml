@@ -1,6 +1,11 @@
 function EnemyState_Free(){
 vsp = vsp + grv;
-hsp = sign(hsp)*curr_speed;
+if (curr_speed != 0){
+	hsp = sign(hsp)*curr_speed;
+}
+else {
+	hsp = base_speed*image_xscale;
+}
 //Horizontal Collision
 if (place_meeting(x+hsp, y, o_wall)){
 	hsp = hsp*-1;

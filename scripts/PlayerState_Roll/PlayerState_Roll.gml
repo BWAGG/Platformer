@@ -2,6 +2,9 @@ function PlayerState_Roll(){
 	if (keyboard_check_pressed(vk_escape)){
 		o_gameManager.gameState = GAMESTATE.PAUSED;
 	}
+	if (key_up and image_index > 4){
+		jump_buffer = true;
+	}
 	sprite_index = s_Kevin_Roll;
 	var move = key_right - key_left;
 	//Movement
@@ -46,6 +49,13 @@ function PlayerState_Roll(){
 	}
 	if (animation_end()){
 		mask_index = S_Kevin_Stand;
+		if (jump_buffer and ((place_meeting(x, y+2*vsp+1, o_wall) or double_jump or coyote>0))){
+			if (!(place_meeting(x, y+2*vsp+1, o_wall)) and coyote<=0){
+				double_jump = false;
+			}
+			vsp = -5.2;
+			jump_buffer = false;
+		}
 		invuln = false;
 		state = PLAYERSTATE.FREE;
 	}

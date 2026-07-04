@@ -11,12 +11,17 @@ invuln = false;
 init_speed = 0;
 ability_charge = 0;
 ability_keys = ["SPC", "SHI", "H", "J", "K", "L"];
+coyote_dur = 40;
+coyote = coyote_dur;
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
 current_released = false;
 current = 0;
 ability_sprite = 0;
+jump_buffer = false;
+
+
 
 enum PLAYERSTATE
 {
@@ -24,6 +29,7 @@ enum PLAYERSTATE
 	ATTACK_PECK,
 	ATTACK_SPIT,
 	ATTACK_TERRAIN,
+	ATTACK_KICK,
 	ROLL,
 	DEAD,
 	PAUSED

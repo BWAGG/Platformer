@@ -10,10 +10,10 @@ var x_dif_p = o_player.x - x;
 if (x_dif_p != 0 and y_dif_p != 0){
 	if(place_meeting(x,y,o_player)){
 		with(o_player){
-			if (!place_meeting(x+sign(x_dif_p), y, o_terrain)){
+			if (!place_meeting(x+5*sign(x_dif_p), y, o_terrain)){
 					x += 5*sign(x_dif_p);
 			}
-			if (!place_meeting(x, y+sign(y_dif_p), o_terrain)){
+			if (!place_meeting(x, y+5*sign(y_dif_p), o_terrain)){
 					y += 5*sign(y_dif_p);
 			}
 		}

@@ -41,7 +41,7 @@ function PlayerState_Terrain(){
 	x=x+hsp;
 	//Jump Check
 	hsp = clamp(hsp, -20, 20);
-	if (key_up and (place_meeting(x, y+2*vsp+1, o_wall) or double_jump)){
+	if (key_up and (place_meeting(x, y+2*vsp+1, o_wall) or double_jump or coyote > 0)){
 		if (!(place_meeting(x, y+2*vsp+1, o_wall))){
 			double_jump = false;
 		}
@@ -60,6 +60,7 @@ function PlayerState_Terrain(){
 		}
 		if (sign(vsp)>0){
 			double_jump = true;
+			coyote = coyote_dur;
 		}
 		vsp = 0;
 	}

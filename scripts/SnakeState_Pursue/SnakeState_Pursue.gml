@@ -14,7 +14,9 @@ function SnakeState_Pursue(){
 			state = SnakeSTATE.ATTACK;
 		}
 		//pathfinding to player
-		hsp = curr_speed*sign(o_player.x - x);
+		else{
+			hsp = curr_speed*sign(o_player.x - x);
+		}
 		//Horizontal Collision
 	}
 	if (place_meeting(x+hsp, y, o_wall) ){
