@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"StoatEffects",
-    "path":"folders/StoatEffects.yy",
+    "path":"folders/NPCs/StoatEffects.yy",
   },
   "parentObjectId":{
     "name":"o_Enemy",

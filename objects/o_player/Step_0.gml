@@ -15,7 +15,9 @@ key_ability4 = keyboard_check_pressed(key_a4_chg);
 key_ability5 = keyboard_check_pressed(key_a5_chg);
 current_released = keyboard_check_released(current);
 coyote--;
-
+o_ability_manager.decrement_cooldowns();
+fright-= 3;
+fright = clamp(fright, 0, max_fright);
 switch (state)
 {
 	case PLAYERSTATE.FREE: PlayerState_Free(); break;
@@ -23,6 +25,8 @@ switch (state)
 	case PLAYERSTATE.ATTACK_PECK: PlayerState_Peck(); break;
 	case PLAYERSTATE.ATTACK_TERRAIN: PlayerState_Terrain(); break;
 	case PLAYERSTATE.ATTACK_KICK: PlayerState_Kick(); break;
+	case PLAYERSTATE.ATTACK_STAB: PlayerState_Stab(); break;
+	case PLAYERSTATE.WALL_CLING: PlayerState_Cling(); break;
 	case PLAYERSTATE.ROLL: PlayerState_Roll(); break;
 	case PLAYERSTATE.DEAD: break;
 }

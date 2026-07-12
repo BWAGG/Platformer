@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Peck",
+    "path":"folders/Abilities/Peck.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

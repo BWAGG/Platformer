@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlayerDeath",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerDeath",
+  "parent":{
+    "name":"PlayerEffects",
+    "path":"folders/PlayerEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

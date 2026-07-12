@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"StoatEffects",
-    "path":"folders/StoatEffects.yy",
+    "path":"folders/NPCs/StoatEffects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

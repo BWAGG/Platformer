@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"SnakeEffects",
-    "path":"folders/SnakeEffects.yy",
+    "path":"folders/NPCs/SnakeEffects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

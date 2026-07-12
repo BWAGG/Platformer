@@ -9,8 +9,8 @@
   "name":"o_Peck",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Peck",
+    "path":"folders/Abilities/Peck.yy",
   },
   "parentObjectId":{
     "name":"o_Interactable",

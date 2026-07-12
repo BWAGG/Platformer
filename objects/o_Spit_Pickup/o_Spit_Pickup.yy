@@ -9,8 +9,8 @@
   "name":"o_Spit_Pickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Frog",
+    "path":"folders/Abilities/Frog.yy",
   },
   "parentObjectId":{
     "name":"o_Interactable",

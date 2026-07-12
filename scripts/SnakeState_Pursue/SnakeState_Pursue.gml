@@ -1,12 +1,13 @@
 function SnakeState_Pursue(){
 	vsp = vsp + grv;
+	o_player.fright += 5;
 	attackdelay--;
 	if (instance_exists(o_player)){
 		//Look for player
 		if (distance_to_object(o_player) > 500){
 			state = SnakeSTATE.FREE; 
 		}
-		if (distance_to_object(o_player) < 30 and attackdelay < 0){
+		if (distance_to_object(o_player) < 40 and attackdelay < 0){
 			image_index = 0;
 			image_speed = 1;
 			hsp=0;
@@ -14,14 +15,14 @@ function SnakeState_Pursue(){
 			state = SnakeSTATE.ATTACK;
 		}
 		//pathfinding to player
-		else{
+		else if(!knocked){
 			hsp = curr_speed*sign(o_player.x - x);
 		}
-		//Horizontal Collision
+	//Horizontal Collision
 	}
-	if (place_meeting(x+hsp, y, o_wall) ){
+	if (place_meeting(x+hsp, y, o_wall)){
 		hsp = 0;
-		if (place_meeting(x, y+1, o_wall)){
+		if (place_meeting(x, y+1, o_wall) and o_player.y - y < 0){
 			vsp = -6;
 		}
 	}
@@ -45,13 +46,12 @@ function SnakeState_Pursue(){
 	}
 	//Animations
 	if (!place_meeting(x, y+1, o_wall)){
-		if (sign(vsp)>0){
-			sprite_index = s_snake_idle;
-		}
+		sprite_index = s_snake_idle;
 	}
 	else{
 		image_speed = 1;
 		if (hsp == 0){
+			image_index = 0;
 			sprite_index = s_snake_idle;
 			stopped = true;
 		}

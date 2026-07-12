@@ -6,7 +6,7 @@
   "name":"SnakeState_Pursue",
   "parent":{
     "name":"SnakeEffects",
-    "path":"folders/SnakeEffects.yy",
+    "path":"folders/NPCs/SnakeEffects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"sh_Flash_Red",
+  "name":"sh_Flash_Red",
+  "parent":{
+    "name":"Platformer",
+    "path":"Platformer.yyp",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

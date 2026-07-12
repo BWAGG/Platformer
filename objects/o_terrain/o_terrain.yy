@@ -6,8 +6,8 @@
   "name":"o_terrain",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"World_Objects",
+    "path":"folders/World_Objects.yy",
   },
   "parentObjectId":{
     "name":"o_wall",

@@ -9,8 +9,8 @@
   "name":"o_dirt_pickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Mole",
+    "path":"folders/Abilities/Mole.yy",
   },
   "parentObjectId":{
     "name":"o_Interactable",

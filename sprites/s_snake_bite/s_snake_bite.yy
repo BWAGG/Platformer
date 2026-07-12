@@ -35,7 +35,7 @@
   "origin":4,
   "parent":{
     "name":"SnakeEffects",
-    "path":"folders/SnakeEffects.yy",
+    "path":"folders/NPCs/SnakeEffects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -68,7 +68,7 @@
     },
     "name":"s_snake_bite",
     "playback":1,
-    "playbackSpeed":15.0,
+    "playbackSpeed":10.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

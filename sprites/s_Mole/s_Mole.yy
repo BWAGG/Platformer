@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Mole",
+    "path":"folders/Abilities/Mole.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

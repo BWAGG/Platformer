@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Roll",
+    "path":"folders/Abilities/Roll.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

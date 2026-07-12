@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Wallaby",
+    "path":"folders/Abilities/Wallaby.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

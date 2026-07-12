@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"o_wall",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"o_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"World_Objects",
+    "path":"folders/World_Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,5 +31,8 @@
   "solid":true,
   "spriteId":null,
   "spriteMaskId":null,
+  "tags":[
+    "pausable",
+  ],
   "visible":true,
 }

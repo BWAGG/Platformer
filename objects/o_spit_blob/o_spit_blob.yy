@@ -9,8 +9,8 @@
   "name":"o_spit_blob",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Frog",
+    "path":"folders/Abilities/Frog.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Frog",
+    "path":"folders/Abilities/Frog.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

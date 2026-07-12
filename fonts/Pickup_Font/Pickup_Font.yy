@@ -119,8 +119,8 @@
   "maintainGms1Font":false,
   "name":"Pickup_Font",
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

@@ -9,8 +9,8 @@
   "name":"o_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"PersistentEffects",
+    "path":"folders/PersistentEffects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"SnakeEffects",
-    "path":"folders/SnakeEffects.yy",
+    "path":"folders/NPCs/SnakeEffects.yy",
   },
   "parentObjectId":{
     "name":"o_Enemy",

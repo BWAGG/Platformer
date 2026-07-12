@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlayerState_Stab",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerState_Stab",
+  "parent":{
+    "name":"PlayerEffects",
+    "path":"folders/PlayerEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

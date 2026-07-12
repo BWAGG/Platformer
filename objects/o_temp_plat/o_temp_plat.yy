@@ -9,8 +9,8 @@
   "name":"o_temp_plat",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Mole",
+    "path":"folders/Abilities/Mole.yy",
   },
   "parentObjectId":{
     "name":"o_wall",

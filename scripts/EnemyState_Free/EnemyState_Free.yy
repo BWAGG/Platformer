@@ -6,7 +6,7 @@
   "name":"EnemyState_Free",
   "parent":{
     "name":"StoatEffects",
-    "path":"folders/StoatEffects.yy",
+    "path":"folders/NPCs/StoatEffects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

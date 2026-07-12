@@ -15,6 +15,7 @@ function PlayerState_Peck(){
 			var hitID = hitByAttackNow[| i];
 			if (ds_list_find_index(hitByAttack, hitID) == -1){
 				ds_list_add(hitByAttack, hitID);
+				fright -= 240;
 				with (hitID)
 				{
 					hp--;
@@ -25,9 +26,9 @@ function PlayerState_Peck(){
 	}
 	//Movement
 	mask_index = S_Kevin_Stand;
-	hac = image_xscale*0.2;
+	hac = image_xscale*0.05;
 	if (image_index == 1){
-		hsp += image_xscale*4;
+		hsp += image_xscale*2;
 	}
 	hsp += hac;
 
@@ -62,16 +63,7 @@ function PlayerState_Peck(){
 
 	//Death Plane
 
-if (place_meeting(x+hsp, y, o_death)){
-	state = PLAYERSTATE.DEAD;
-	scr_Transition(TRANS_MODE.DIE);
-	o_flag.Touched = false;
-}
-if (hp <= 0){
-	state = PLAYERSTATE.DEAD;
-	scr_Transition(TRANS_MODE.DIE);
-	o_flag.Touched = false;
-}
+PlayerDeath();
 	
 	if (animation_end()){
 		mask_index = S_Kevin_Stand;

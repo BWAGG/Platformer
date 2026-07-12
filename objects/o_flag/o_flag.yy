@@ -9,8 +9,8 @@
   "name":"o_flag",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"World_Objects",
+    "path":"folders/World_Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

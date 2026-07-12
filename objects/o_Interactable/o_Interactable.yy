@@ -10,8 +10,8 @@
   "name":"o_Interactable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Abilities",
+    "path":"folders/Abilities.yy",
   },
   "parentObjectId":null,
   "persistent":false,

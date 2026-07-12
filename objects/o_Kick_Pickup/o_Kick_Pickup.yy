@@ -9,8 +9,8 @@
   "name":"o_Kick_Pickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Wallaby",
+    "path":"folders/Abilities/Wallaby.yy",
   },
   "parentObjectId":{
     "name":"o_Interactable",

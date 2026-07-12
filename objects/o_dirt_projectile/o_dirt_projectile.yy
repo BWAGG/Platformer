@@ -11,8 +11,8 @@
   "name":"o_dirt_projectile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Mole",
+    "path":"folders/Abilities/Mole.yy",
   },
   "parentObjectId":null,
   "persistent":false,

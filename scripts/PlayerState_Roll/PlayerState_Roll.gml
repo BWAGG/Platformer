@@ -37,16 +37,7 @@ function PlayerState_Roll(){
 	y=y+vsp;
 
 	//Death Plane
-	if (place_meeting(x+hsp, y, o_death)){
-		state = PLAYERSTATE.DEAD;
-		scr_Transition(TRANS_MODE.DIE);
-		o_flag.Touched = false;
-	}
-	if (hp <= 0){
-		state = PLAYERSTATE.DEAD;
-		scr_Transition(TRANS_MODE.DIE);
-		o_flag.Touched = false;
-	}
+	PlayerDeath();
 	if (animation_end()){
 		mask_index = S_Kevin_Stand;
 		if (jump_buffer and ((place_meeting(x, y+2*vsp+1, o_wall) or double_jump or coyote>0))){

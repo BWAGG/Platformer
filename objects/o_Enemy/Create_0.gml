@@ -1,6 +1,7 @@
 base_speed = 2;
 curr_speed = 2;
 hsp = 0;
+knocked = false;
 active_debuffs = [];
 
 function apply_buffs(_array_buffs){
@@ -14,9 +15,11 @@ function apply_buffs(_array_buffs){
 		if(_array_buffs[i].effect == "knockback"){
 			curr_speed = abs(_array_buffs[i].value);
 			hsp = _array_buffs[i].value;
+			knocked = true;
 			if (_array_buffs[i].duration == 0){
 				curr_speed = 0;
 				hsp = 0;
+				knocked = false;
 			}
 		}
 		if (_array_buffs[i].duration <= 0){

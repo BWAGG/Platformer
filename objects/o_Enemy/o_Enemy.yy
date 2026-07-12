@@ -9,8 +9,8 @@
   "name":"o_Enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"NPCs",
+    "path":"folders/NPCs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

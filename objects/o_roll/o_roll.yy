@@ -9,8 +9,8 @@
   "name":"o_roll",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platformer",
-    "path":"Platformer.yyp",
+    "name":"Roll",
+    "path":"folders/Abilities/Roll.yy",
   },
   "parentObjectId":{
     "name":"o_Interactable",

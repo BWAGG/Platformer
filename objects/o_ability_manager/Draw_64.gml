@@ -11,9 +11,15 @@ for (var i = 0; i < 6; i++){
 		else{
 			col = c_white;
 		}
-		var item_x = bar_offset_w + (item_width * i * 1.2);
+		var item_x = bar_offset_w + (item_width + item_gap) * i;
 		var item_y = gui_h - bar_offset_h;
-		draw_sprite_stretched_ext(ability_sprite,0, item_x, item_y, 64, 64, col, 1);
+		var shake_x = 0;
+		var shake_y = 0;
+		if (o_player.fright > o_player.scared_threshold and i>1){
+			shake_x = floor(random_range(-3,3))
+			shake_y = floor(random_range(-3,3))
+		}
+		draw_sprite_stretched_ext(ability_sprite,0, item_x+shake_x, item_y+shake_y, 64, 64, col, 1);
 		draw_set_font(Hotkey_Font);
 		draw_set_colour(c_green);
 		draw_text(item_x + 32, item_y, o_player.ability_keys[i]);
