@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"calc_jump_h",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"calc_jump_h",
+  "parent":{
+    "name":"DingoEffects",
+    "path":"folders/NPCs/DingoEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,17 +1,17 @@
 function PlayerMovement(move){
 hac = move*walksp;
 hsp += hac;
-if ((hsp) > 4 and place_meeting(x, y+2*vsp+1, o_wall)){
-	hsp = max(4, hsp - 1.2);
+if ((hsp) > 5 and place_meeting(x, y+2*vsp+1, o_wall)){
+	hsp = max(5, hsp - 1.2);
 }
-else if ((hsp) > 4){
-	hsp = max(4, hsp - 0.6)
+else if ((hsp) > 5){
+	hsp = max(5, hsp - 0.6)
 }
-else if (hsp < -4 and place_meeting(x, y+2*vsp+1, o_wall)){
-	hsp = min(-4, hsp + 1.2);
+else if (hsp < -5 and place_meeting(x, y+2*vsp+1, o_wall)){
+	hsp = min(-5, hsp + 1.2);
 }
-else if ((hsp) < -4){
-	hsp = min(4, hsp + 0.6)
+else if ((hsp) < -5){
+	hsp = min(-5, hsp + 0.6)
 }
 else if (hsp > 0){
 	hsp = max(0, hsp-0.25);
@@ -33,7 +33,6 @@ if (place_meeting(x+hsp, y, o_wall)){
 
 x=x+hsp;
 //Jump Check
-hsp = clamp(hsp, -20, 20);
 if (key_up and (place_meeting(x, y+2*vsp+1, o_wall) or double_jump or coyote>0)){
 	if (!(place_meeting(x, y+2*vsp+1, o_wall)) and coyote<=0){
 		double_jump = false;

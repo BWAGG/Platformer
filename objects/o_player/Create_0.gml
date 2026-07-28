@@ -7,7 +7,7 @@ init_speed = 0;
 double_jump=true;
 //key variables
 
-ability_keys = ["SPC", "SHI", "H", "J", "K", "L"];
+ability_keys = ["SPC", "SHI", "J", "K", "L"];
 
 //coyote time variables
 coyote_dur = 10;

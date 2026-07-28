@@ -2,7 +2,6 @@
 key_a2_chg = ord(ability_keys[2]);
 key_a3_chg = ord(ability_keys[3]);
 key_a4_chg = ord(ability_keys[4]);
-key_a5_chg = ord(ability_keys[5]);
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_up = keyboard_check_pressed(ord("W"));
@@ -12,7 +11,6 @@ key_ability1 = keyboard_check_pressed(vk_shift);
 key_ability2 = keyboard_check_pressed(key_a2_chg);
 key_ability3 = keyboard_check_pressed(key_a3_chg);
 key_ability4 = keyboard_check_pressed(key_a4_chg);
-key_ability5 = keyboard_check_pressed(key_a5_chg);
 current_released = keyboard_check_released(current);
 coyote--;
 o_ability_manager.decrement_cooldowns();

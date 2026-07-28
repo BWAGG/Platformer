@@ -1,7 +1,7 @@
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
 
-for (var i = 0; i < 6; i++){
+for (var i = 0; i < 5; i++){
 	if (ability_list[i] != 0){
 		var ability_sprite = ability_list[i].ability_sprite;
 		var col = c_white;

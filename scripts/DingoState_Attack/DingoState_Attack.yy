@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DingoState_Attack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DingoState_Attack",
+  "parent":{
+    "name":"DingoEffects",
+    "path":"folders/NPCs/DingoEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

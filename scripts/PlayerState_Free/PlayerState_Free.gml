@@ -36,7 +36,7 @@ if (key_ability0 && o_ability_manager.ability_list[0] != 0 && o_ability_manager.
 	o_ability_manager.ability_list[0].current_cooldown = o_ability_manager.ability_list[0].cooldown;
 	state = o_ability_manager.ability_list[0].state_name; 
 }
-if (key_ability1 && o_ability_manager.ability_list[1] != 0 && o_ability_manager.ability_list[1].current_cooldown == 0) {
+else if (key_ability1 && o_ability_manager.ability_list[1] != 0 && o_ability_manager.ability_list[1].current_cooldown == 0) {
 	image_index = 0;
 	image_speed = 1;
 	if (move != 0){
@@ -52,7 +52,7 @@ if (key_ability1 && o_ability_manager.ability_list[1] != 0 && o_ability_manager.
 	o_ability_manager.ability_list[1].current_cooldown = o_ability_manager.ability_list[1].cooldown;
 	state = o_ability_manager.ability_list[1].state_name; 
 }
-if (key_ability2 && o_ability_manager.ability_list[2] != 0 && o_ability_manager.ability_list[2].current_cooldown == 0){
+else if (key_ability2 && o_ability_manager.ability_list[2] != 0 && o_ability_manager.ability_list[2].current_cooldown == 0){
 	image_index = 0;
 	image_speed = 1;
 	ds_list_clear(hitByAttack);
@@ -60,7 +60,7 @@ if (key_ability2 && o_ability_manager.ability_list[2] != 0 && o_ability_manager.
 	current = key_a2_chg;
 	state = o_ability_manager.ability_list[2].state_name;
 }
-if (key_ability3 && o_ability_manager.ability_list[3] != 0 && o_ability_manager.ability_list[3].current_cooldown == 0){
+else if (key_ability3 && o_ability_manager.ability_list[3] != 0 && o_ability_manager.ability_list[3].current_cooldown == 0){
 	image_index = 0;
 	image_speed = 1;
 	ds_list_clear(hitByAttack);
@@ -68,20 +68,12 @@ if (key_ability3 && o_ability_manager.ability_list[3] != 0 && o_ability_manager.
 	current = key_a3_chg;
 	state = o_ability_manager.ability_list[3].state_name;
 }
-if (key_ability4 && o_ability_manager.ability_list[4] != 0 && o_ability_manager.ability_list[4].current_cooldown == 0){
+else if (key_ability4 && o_ability_manager.ability_list[4] != 0 && o_ability_manager.ability_list[4].current_cooldown == 0){
 	image_index = 0;
 	image_speed = 1;
 	ds_list_clear(hitByAttack);
 	o_ability_manager.ability_list[4].current_cooldown = o_ability_manager.ability_list[4].cooldown;
 	current = key_a4_chg;
 	state = o_ability_manager.ability_list[4].state_name;
-}
-if (key_ability5 && o_ability_manager.ability_list[5] != 0 && o_ability_manager.ability_list[5].current_cooldown == 0){
-	image_index = 0;
-	image_speed = 1;
-	ds_list_clear(hitByAttack);
-	o_ability_manager.ability_list[5].current_cooldown = o_ability_manager.ability_list[5].cooldown;
-	current = key_a5_chg;
-	state = o_ability_manager.ability_list[5].state_name;
 }
 }

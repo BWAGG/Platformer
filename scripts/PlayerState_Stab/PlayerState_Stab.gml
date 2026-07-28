@@ -26,20 +26,42 @@ function PlayerState_Stab(){
 	}
 	var wall_hits = instance_place_list(x,y, o_wall, hitByAttackNow, false);
 	if (wall_hits>0){
+		mask_index = s_Kevin_Cling;
+		if(!place_meeting(x,y,o_wall)){
+			x += image_xscale*5;
+		}
+		vsp = 0;
+		hsp = 0;
 		mask_index = S_Kevin_Stand;
 		image_index = 0;
-		ability_charge=300;
+		ability_charge=80;
 		state = PLAYERSTATE.WALL_CLING;
 		return;
 	}
 	//Movement
 	mask_index = S_Kevin_Stand;
-	hac = image_xscale*0.05;
 	if (image_index == 1){
-		hsp += image_xscale*2;
+		hsp += image_xscale*4;
 	}
-	hsp += hac;
-
+	hsp += image_xscale*walksp;
+	if ((hsp) > 5 and place_meeting(x, y+2*vsp+1, o_wall)){
+		hsp = max(5, hsp - 1.2);
+	}
+	else if ((hsp) > 5){
+		hsp = max(5, hsp - 0.6)
+	}
+	else if (hsp < -5 and place_meeting(x, y+2*vsp+1, o_wall)){
+		hsp = min(-5, hsp + 1.2);
+	}
+	else if ((hsp) < -5){
+		hsp = min(-5, hsp + 0.6);
+	}
+	else if (hsp > 0){
+	hsp = max(0, hsp-0.25);
+	}
+	else if (hsp < 0){
+		hsp = min(0, hsp+0.25);
+	}
 	//Horizontal Collision
 	if (place_meeting(x+hsp, y, o_wall)){
 		while (!place_meeting(x+sign(hsp), y, o_wall)){

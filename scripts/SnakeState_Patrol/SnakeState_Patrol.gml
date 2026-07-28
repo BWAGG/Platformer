@@ -54,7 +54,13 @@ function SnakeState_Patrol(){
 	if instance_exists(o_player){
 		if (distance_to_object(o_player) < 300){
 			o_player.fright += 30;
-			state = SnakeSTATE.PURSUE; 
+			var switch_value = random_range(1, 10);
+			if (switch_value <= switch_marker){
+				state = SnakeSTATE.EVADE;
+			}
+			else{
+				state = SnakeSTATE.PURSUE;
+			}
 		}
 	}
 }

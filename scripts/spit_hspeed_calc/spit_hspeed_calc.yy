@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spit_hspeed_calc",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spit_hspeed_calc",
+  "parent":{
+    "name":"SnakeEffects",
+    "path":"folders/NPCs/SnakeEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

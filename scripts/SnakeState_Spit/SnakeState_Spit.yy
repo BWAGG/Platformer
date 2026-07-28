@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SnakeState_Spit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SnakeState_Spit",
+  "parent":{
+    "name":"SnakeEffects",
+    "path":"folders/NPCs/SnakeEffects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

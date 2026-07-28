@@ -24,11 +24,9 @@ if (menu_open == true){
 	if (key_select){
 		menu_open = false;
 		o_gameManager.unpause_tag("pausable");
-		if (o_ability_manager.ability_list[selected] != 0){
-			var ability_drop = o_ability_manager.ability_list[selected].ability_object;
-			instance_create_layer(x, y, "Instances", ability_drop);
+		if(!array_contains(o_ability_manager.ability_list, new_ability)){
+			array_set(o_ability_manager.ability_list,selected,new_ability);
 		}
-		array_set(o_ability_manager.ability_list,selected,new_ability);
 	}
 }
 

@@ -8,8 +8,9 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(c_white);
 draw_set_font(Ability_Select_Font);
-draw_text(display_get_gui_width()/2,display_get_gui_height()/2, "Swapping Ability");
-start_draw_x = display_get_gui_width()/2 - 2*box_width - 1.5*box_gap;
+draw_text(display_get_gui_width()/2,display_get_gui_height()/2, "Found A Critter, Choose Slot To Add");
+draw_text(display_get_gui_width()/2,display_get_gui_height()/2 + 30, "All Found Critters Can Be Added At The Nest");
+start_draw_x = display_get_gui_width()/2 - 1.5*box_width - box_gap;
 start_draw_y = display_get_gui_height()*ability_box_height_percent;
 for(var i = 2; i < array_length(o_ability_manager.ability_list); i++){
 	if (selected = i){

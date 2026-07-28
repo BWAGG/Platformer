@@ -2,6 +2,8 @@ function SnakeState_Pursue(){
 	vsp = vsp + grv;
 	o_player.fright += 5;
 	attackdelay--;
+	swap_count--;
+	image_xscale = -1*sign(o_player.x - x);
 	if (instance_exists(o_player)){
 		//Look for player
 		if (distance_to_object(o_player) > 500){
@@ -69,5 +71,9 @@ function SnakeState_Pursue(){
 			}
 		}
 	}
-	if (hsp != 0) image_xscale = sign(hsp)*-1;
+	if (swap_count <= 0){
+		swap_count = max_swap_count;
+		switch_marker = 4;
+		state = SnakeSTATE.FREE;
+	}
 }

@@ -5,7 +5,8 @@ bar_offset_h = 120;
 bar_height = 30;
 item_width = 64;
 item_gap = item_width*0.2;
-bar_offset_w = display_get_gui_width()/2 - (item_width*3) - 2.5*item_gap;
+bar_offset_w = display_get_gui_width()/2 - (item_width*2.5) - 2*item_gap;
+nest_list = array_create(6,0);
 
 function ability(_ability_obj, _ability_sprite, _state_Name, _cooldown) constructor {
 	ability_object = _ability_obj;
@@ -15,7 +16,7 @@ function ability(_ability_obj, _ability_sprite, _state_Name, _cooldown) construc
 	current_cooldown = 0;
 }
 
-ability_list = array_create(6,0);
+ability_list = array_create(5,0);
 
 decrement_cooldowns = function(){
 	for (i = 0; i < array_length(ability_list); i++){

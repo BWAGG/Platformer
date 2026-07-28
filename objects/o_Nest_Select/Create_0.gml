@@ -1,0 +1,10 @@
+nest_open = false;
+inventory_open = false;
+selected = 0;
+new_ability = 0;
+nest_length = 5;
+inventory_length = 5;
+box_width = 128;
+box_gap = 32;
+ability_box_height_percent = 0.6;
+error = 0;

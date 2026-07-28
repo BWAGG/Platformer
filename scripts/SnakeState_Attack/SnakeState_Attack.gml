@@ -1,7 +1,7 @@
 function SnakeState_Attack(){
 	sprite_index = s_snake_bite;
 	stopped = true;
-	attackdelay = 100;
+	attackdelay = 90;
 	o_player.fright += 2;
 	//Switch to attack and check for hits
 	mask_index = s_snake_bite_HB;
@@ -56,6 +56,8 @@ function SnakeState_Attack(){
 	}
 	
 	if (animation_end()){
-		state = SnakeSTATE.PURSUE;
+		swap_count = max_swap_count;
+		switch_marker = 4;
+		state = SnakeSTATE.FREE;
 	}
 }
